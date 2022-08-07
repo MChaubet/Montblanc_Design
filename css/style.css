@@ -1,0 +1,181 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    background: #060507;
+}
+
+h1, h2, h3, h4, h5, h6,
+div, p, span {
+    color: #fff;
+}
+
+.body-container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 20px 0 20px;
+}
+
+.menu svg {
+    padding: 30px 10px 30px 10px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 25px;
+    flex-grow: 1;
+}
+
+.menu-item {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Druk', serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+
+.bike {
+    /*border: 2px solid;*/
+    /*min-width: 500px;*/
+
+    background-image: url("../images/bike.png");
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#japanese-text {
+    background-image: url("../images/japanese-text.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 100%;
+}
+
+.explanation {
+    padding: 50px;
+
+    background-image: url("../images/bike-rear.png");
+    background-position: right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 200%;
+}
+
+.bike-detail {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.bike-detail-item {
+    /*border: 2px solid;*/
+    padding: 0 10px 0 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bike-detail-item-title {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+
+    display:flex;
+    justify-content:center;
+
+    font-family: Montserrat, serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+
+    color: #3F3E44;
+}
+
+.bike-detail-item-content {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bike-detail-item-top {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.bike-detail-item-center {
+    font-family: Druk, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.bike-detail-item-bottom {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: 'Druk';
+    src: url('../fonts/Druk-Wide-Bold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat.ttf') format('truetype')
+}
